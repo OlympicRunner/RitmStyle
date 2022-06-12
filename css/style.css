@@ -1,0 +1,753 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Proxima_Nova";
+  src: local("Proxima_Nova-Regular"), url("../fonts/proxima_nova_regular.woff2") format("woff2");
+  src: local("Proxima_Nova-Regular"), url("../fonts/proxima_nova_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima_Nova";
+  src: local("Proxima_Nova-Bold"), url("../fonts/proxima_nova_Bold.woff2") format("woff2");
+  src: local("Proxima_Nova-Bold"), url("../fonts/proxima_nova_Bold.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "El_Messiri";
+  src: local("El_Messiri-Bold"), url("../fonts/ElMessiri-Bold.woff2") format("woff2");
+  src: local("El_Messiri-Bold"), url("../fonts/ElMessiri-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Proxima_Nova', 'El_Messiri', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #162831;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  max-width: 1296px;
+  padding: 0 150px;
+  margin: 0 auto 25px;
+}
+
+body .header .nav .nav__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: white;
+}
+
+body .header .nav .nav__link:not(:last-child) {
+  padding-right: 50px;
+}
+
+body .header .header__btn {
+  padding: 9px 15px;
+  border-radius: 3px;
+  background-color: #018ABE;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 140%;
+}
+
+body main .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1296px;
+  height: 600px;
+  margin: 0 auto 150px;
+  background-image: url(../img/hero.png);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body main .hero .hero__h2 {
+  padding-top: 136px;
+  font-size: 24px;
+  position: relative;
+  max-width: 1000px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  line-height: 140%;
+  color: white;
+}
+
+body main .hero .hero__h2 .decor-L {
+  position: absolute;
+  bottom: 15px;
+  left: -80px;
+}
+
+body main .hero .hero__h2 .decor-R {
+  position: absolute;
+  bottom: 15px;
+  right: -80px;
+}
+
+body main .hero .hero__h1 {
+  padding-top: 40px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 140%;
+  color: white;
+  text-align: center;
+}
+
+body main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1296px;
+  padding: 0 150px;
+  margin: 0 auto 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content .content__h2 {
+  margin-bottom: 100px;
+  font-size: 42px;
+  position: relative;
+  max-width: 1000px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  line-height: 140%;
+  color: white;
+}
+
+body main .content .content__h2 .decor-L {
+  position: absolute;
+  bottom: 15px;
+  left: -80px;
+}
+
+body main .content .content__h2 .decor-R {
+  position: absolute;
+  bottom: 15px;
+  right: -80px;
+}
+
+body main .content .content__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (258px)[2];
+  -ms-grid-columns: (416px)[3];
+      grid-template: repeat(2, 258px)/repeat(3, 416px);
+  grid-gap: 24px;
+}
+
+body main .content .content__block .content__item-1 {
+  padding: 50px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  background-image: url(../img/content-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .content .content__block .content__item-2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background-image: url(../img/content-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px 40px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .content .content__block .content__item-3 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background-image: url(../img/content-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px 40px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .content .content__block .content__item-4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  background-image: url(../img/content-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px 40px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .content .content__block .content__item-5 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  background-image: url(../img/content-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px 40px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1400px;
+  margin: 0 auto 150px;
+}
+
+body main .review .review__h2 {
+  margin-bottom: 100px;
+  font-size: 42px;
+  position: relative;
+  max-width: 1000px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  line-height: 140%;
+  color: white;
+}
+
+body main .review .review__h2 .decor-L {
+  position: absolute;
+  bottom: 15px;
+  left: -80px;
+}
+
+body main .review .review__h2 .decor-R {
+  position: absolute;
+  bottom: 15px;
+  right: -80px;
+}
+
+body main .review .review__swiper .review__container .review__item {
+  position: relative;
+  width: 615px;
+  height: 350px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  background-color: #154558;
+}
+
+body main .review .review__swiper .review__container .review__item .review__h3 {
+  padding: 50px 60px 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .review .review__swiper .review__container .review__item .review__p {
+  padding: 0 60px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+body main .review .review__swiper .review__container .swiper-slide-active {
+  background-color: #018ABE;
+}
+
+body main .review .review__swiper .swiper-pagination {
+  position: relative;
+}
+
+body main .review .review__swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #838383;
+}
+
+body main .review .review__swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+body main .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1076px;
+  padding: 0 150px;
+  margin: 0 auto 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .about .about__h2 {
+  margin-bottom: 100px;
+  font-size: 42px;
+  margin-bottom: 100px;
+  position: relative;
+  max-width: 1000px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  line-height: 140%;
+  color: white;
+}
+
+body main .about .about__h2 .decor-L {
+  position: absolute;
+  bottom: 15px;
+  left: -80px;
+}
+
+body main .about .about__h2 .decor-R {
+  position: absolute;
+  bottom: 15px;
+  right: -80px;
+}
+
+body main .about .about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .about .about__container .about__item-1 {
+  width: 466px;
+  margin-bottom: 100px;
+}
+
+body main .about .about__container .about__item-1 .about__h3 {
+  padding-top: 66px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .about .about__container .about__item-1 .about-p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .about .about__container .about__item-2 {
+  width: 526px;
+  height: 365px;
+  background-image: url(../img/about-2.png);
+  border-radius: 10px;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body main .about .about__container .about__item-3 {
+  width: 526px;
+  background-image: url(../img/about-3.png);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body main .about .about__container .about__item-4 {
+  width: 466px;
+  height: 400px;
+}
+
+body main .about .about__container .about__item-4 .about__h3 {
+  padding-top: 17px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .about .about__container .about__item-4 .about-p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1076px;
+  padding: 0 150px;
+  margin: 0 auto 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .price .price__h2 {
+  margin-bottom: 100px;
+  font-size: 42px;
+  margin-bottom: 100px;
+  position: relative;
+  max-width: 1000px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  line-height: 140%;
+  color: white;
+}
+
+body main .price .price__h2 .decor-L {
+  position: absolute;
+  bottom: 15px;
+  left: -80px;
+}
+
+body main .price .price__h2 .decor-R {
+  position: absolute;
+  bottom: 15px;
+  right: -80px;
+}
+
+body main .price .price__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 134px;
+}
+
+body main .price .price__container .price__items {
+  padding-top: 70px;
+}
+
+body main .price .price__container .price__items .price__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 38px;
+  margin-bottom: 31px;
+  background-image: url(../img/svg/decor-ul.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-weight: 700;
+  font-family: 'El_Messiri';
+  font-size: 18px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .price .price__container .price__serteficate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .price .price__container .price__serteficate img {
+  margin-bottom: 30px;
+}
+
+body main .price .price__container .price__serteficate p {
+  font-family: 'El_Messiri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .contact {
+  max-width: 1296px;
+  padding: 0 150px;
+  margin: 0 auto 90px;
+}
+
+body main .contact .contact__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 856px 392px;
+      grid-template-columns: 856px 392px;
+  -ms-grid-rows: 290px 290px;
+      grid-template-rows: 290px 290px;
+  grid-row-gap: 24px;
+  grid-column-gap: 48px;
+}
+
+body main .contact .contact__container .contact__map {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+body main .contact .contact__container .contact__map iframe {
+  border-radius: 10px;
+}
+
+body main .contact .contact__container .adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 35px 45px;
+  background-color: #018ABE;
+  border-radius: 10px;
+}
+
+body main .contact .contact__container .adress .contact__h3 {
+  margin-bottom: 20px;
+  font-family: 'El_Messiri';
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+body main .contact .contact__container .adress .contact__nav {
+  background-image: url(../img/svg/nav.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: 21px;
+  padding-left: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: white;
+}
+
+body main .contact .contact__container .adress .contact__M {
+  margin-bottom: 21px;
+  padding-left: 35px;
+  background-image: url(../img/svg/m.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: white;
+}
+
+body main .contact .contact__container .adress .contact__write {
+  margin-bottom: 30px;
+  padding-left: 35px;
+  background-image: url(../img/svg/write.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: white;
+}
+
+body main .contact .contact__container .adress .contact__btn {
+  padding: 9px 15px;
+  border-radius: 3px;
+  background-color: white;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 140%;
+  color: #018ABE;
+}
+
+body main .footer {
+  max-width: 1296px;
+  padding: 0 150px;
+  margin: 0 auto 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .footer .footer__left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: white;
+}
+
+body main .footer .footer__right {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 135%;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

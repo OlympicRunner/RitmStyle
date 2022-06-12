@@ -1,0 +1,42 @@
+@mixin decor-text {
+    .decor-L {
+        position: absolute;
+        bottom: 15px;
+        left: -80px;
+    }
+    .decor-R {
+        position: absolute;
+        bottom: 15px;
+        right: -80px;
+    }
+}
+@mixin h2-text {
+    position: relative;
+    max-width: 1000px;
+    font-family: 'El_Messiri';
+    font-weight: 700;
+    line-height: 140%;
+    color: white;
+}
+
+@mixin background-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin card-flex {
+    display: flex;
+    align-items: flex-end;
+}
+
+@mixin p-left-bottom {
+    padding: 30px 40px;
+}
+
+@mixin content-title {
+    font-family: 'El_Messiri';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: white;
+}
