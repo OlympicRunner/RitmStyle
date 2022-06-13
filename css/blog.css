@@ -1,0 +1,197 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Proxima_Nova";
+  src: local("Proxima_Nova-Regular"), url("../fonts/proxima_nova_regular.woff2") format("woff2");
+  src: local("Proxima_Nova-Regular"), url("../fonts/proxima_nova_regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima_Nova";
+  src: local("Proxima_Nova-Bold"), url("../fonts/proxima_nova_Bold.woff2") format("woff2");
+  src: local("Proxima_Nova-Bold"), url("../fonts/proxima_nova_Bold.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "El_Messiri";
+  src: local("El_Messiri-Bold"), url("../fonts/ElMessiri-Bold.woff2") format("woff2");
+  src: local("El_Messiri-Bold"), url("../fonts/ElMessiri-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Proxima_Nova', 'El_Messiri', sans-serif;
+  font-weight: 400;
+}
+
+body .header {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 0;
+}
+
+body main .blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1296px;
+  margin: 0 auto 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .blog .blog__h2 {
+  padding-top: 60px;
+  margin-bottom: 60px;
+  font-size: 24px;
+  position: relative;
+  max-width: 1000px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  line-height: 140%;
+  color: white;
+}
+
+body main .blog .blog__h2 .decor-L {
+  position: absolute;
+  bottom: 15px;
+  left: -80px;
+}
+
+body main .blog .blog__h2 .decor-R {
+  position: absolute;
+  bottom: 15px;
+  right: -80px;
+}
+
+body main .blog .blog__container .blog__item {
+  margin-bottom: 45px;
+  padding: 50px 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  border: 2px solid #018ABE;
+  border-radius: 20px;
+}
+
+body main .blog .blog__container .blog__item .blog__img {
+  background-image: url(../img/blog-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body main .blog .blog__container .blog__item .blog__info .glog__date {
+  width: 72px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: #018ABE;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 135%;
+  color: white;
+}
+
+body main .blog .blog__container .blog__item .blog__info .blog__h3 {
+  padding-top: 30px;
+  margin-bottom: 20px;
+  font-family: 'El_Messiri';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .blog .blog__container .blog__item .blog__info .blog__p {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: white;
+}
+
+body main .blog .blog__container .blog__item .blog__info .blog__btn {
+  background-color: #018ABE;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 135%;
+  color: white;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+}
+
+body main .blog .blog__container .blog__item .blog__info .blog__btn:hover {
+  background-color: white;
+  color: #018ABE;
+}
+
+body main .footer {
+  padding-top: 30px;
+  border-top: 2px solid white;
+}
+/*# sourceMappingURL=blog.css.map */

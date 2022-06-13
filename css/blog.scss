@@ -1,0 +1,89 @@
+@import 'common.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+
+body {
+    .header {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 0;
+    
+    }
+    main {
+        .blog {
+            display: flex;
+            flex-direction: column;
+            max-width: 1296px;
+            // height: 600px;
+            margin: 0 auto 75px;
+            align-items: center;
+            .blog__h2 {
+                padding-top: 60px;
+                margin-bottom: 60px;
+                font-size: 24px;
+                @include h2-text;
+                @include decor-text;
+            }
+            .blog__container {
+                .blog__item {
+                    margin-bottom: 45px;
+                    padding: 50px 60px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 50px;
+                    border: 2px solid #018ABE;
+                    border-radius: 20px;
+                    .blog__img {
+                        background-image: url(../img/blog-img.png);
+                        @include background-cover;
+                    }
+                    .blog__info {
+                        .glog__date {
+                            width: 72px;
+                            padding: 6px 12px;
+                            border-radius: 5px;
+                            background-color: #018ABE;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 135%;
+                            color: white;
+                        }
+                        .blog__h3 {
+                            padding-top: 30px;
+                            margin-bottom: 20px;
+                            font-family: 'El_Messiri';
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 140%;
+                            color: white;
+                        }
+                        .blog__p {
+                            margin-bottom: 40px;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 140%;
+                            color: white;
+                        }
+                        .blog__btn {
+                            background-color: #018ABE;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 135%;
+                            color: white;
+                            transition: .2s all ease-in-out;
+                            &:hover {
+                                background-color: white;
+                                color: #018ABE;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            padding-top: 30px;
+            border-top: 2px solid white;
+        }
+    }
+}
