@@ -140,6 +140,7 @@ body main .blog .blog__container .blog__item {
 
 body main .blog .blog__container .blog__item .blog__img {
   background-image: url(../img/blog-img.png);
+  border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
 }

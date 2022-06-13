@@ -34,6 +34,7 @@ body {
                     border-radius: 20px;
                     .blog__img {
                         background-image: url(../img/blog-img.png);
+                        border-radius: 10px;
                         @include background-cover;
                     }
                     .blog__info {
