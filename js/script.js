@@ -4,6 +4,7 @@ var swiper = new Swiper(".review__swiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     initialSlide : 1,
+    loop:true,
     coverflowEffect: {
       rotate: 0,
       scale: 0.8,

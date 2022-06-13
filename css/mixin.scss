@@ -27,6 +27,7 @@
 @mixin card-flex {
     display: flex;
     align-items: flex-end;
+    text-align: start;
 }
 
 @mixin p-left-bottom {

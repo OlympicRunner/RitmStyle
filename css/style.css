@@ -107,6 +107,16 @@ body .header .nav .nav__link {
   font-size: 16px;
   line-height: 135%;
   color: white;
+  -webkit-transition: .2s color ease-in-out;
+  transition: .2s color ease-in-out;
+}
+
+body .header .nav .nav__link:hover {
+  color: gray;
+}
+
+body .header .nav .nav__link:active {
+  color: black;
 }
 
 body .header .nav .nav__link:not(:last-child) {
@@ -119,8 +129,21 @@ body .header .header__btn {
   background-color: #018ABE;
   color: white;
   font-weight: 600;
+  border: 1px solid #018ABE;
   font-size: 13px;
   line-height: 140%;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+body .header .header__btn:hover {
+  background-color: white;
+  color: #018ABE;
+}
+
+body .header .header__btn:active {
+  background-color: gray;
+  color: white;
 }
 
 body main .hero {
@@ -223,6 +246,21 @@ body main .content .content__block {
   grid-gap: 24px;
 }
 
+body main .content .content__block .content__item {
+  -webkit-transition: .3s opacity ease-in-out;
+  transition: .3s opacity ease-in-out;
+  border-radius: 12px;
+}
+
+body main .content .content__block .content__item:hover {
+  opacity: 0.9;
+}
+
+body main .content .content__block .content__item:active {
+  -webkit-filter: blur(1.5px);
+          filter: blur(1.5px);
+}
+
 body main .content .content__block .content__item-1 {
   padding: 50px;
   -ms-grid-column: 1;
@@ -239,6 +277,7 @@ body main .content .content__block .content__item-1 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-align: start;
   font-family: 'El_Messiri';
   font-weight: 700;
   font-size: 24px;
@@ -260,6 +299,7 @@ body main .content .content__block .content__item-2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-align: start;
   padding: 30px 40px;
   font-family: 'El_Messiri';
   font-weight: 700;
@@ -282,6 +322,7 @@ body main .content .content__block .content__item-3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-align: start;
   padding: 30px 40px;
   font-family: 'El_Messiri';
   font-weight: 700;
@@ -304,6 +345,7 @@ body main .content .content__block .content__item-4 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-align: start;
   padding: 30px 40px;
   font-family: 'El_Messiri';
   font-weight: 700;
@@ -326,6 +368,7 @@ body main .content .content__block .content__item-5 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-align: start;
   padding: 30px 40px;
   font-family: 'El_Messiri';
   font-weight: 700;
@@ -370,6 +413,11 @@ body main .review .review__h2 .decor-R {
   position: absolute;
   bottom: 15px;
   right: -80px;
+}
+
+body main .review .review__swiper {
+  max-width: 1525px;
+  overflow: hidden;
 }
 
 body main .review .review__swiper .review__container .review__item {
@@ -723,6 +771,13 @@ body main .contact .contact__container .adress .contact__btn {
   font-size: 13px;
   line-height: 140%;
   color: #018ABE;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+}
+
+body main .contact .contact__container .adress .contact__btn:hover {
+  background-color: #018ABE;
+  color: white;
 }
 
 body main .footer {

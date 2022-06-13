@@ -18,6 +18,13 @@ body {
                 font-size: 16px;
                 line-height: 135%;
                 color: white;
+                transition: .2s color ease-in-out;
+                &:hover {
+                    color: gray;
+                }
+                &:active {
+                    color: black;
+                }
             }
             .nav__link:not(:last-child) {
                 padding-right: 50px;
@@ -29,8 +36,18 @@ body {
             background-color: #018ABE;
             color: white;
             font-weight: 600;
+            border: 1px solid #018ABE;
             font-size: 13px;
             line-height: 140%;
+            transition: 0.2s all ease-in-out ;
+            &:hover {
+                background-color: white;
+                color: #018ABE;
+            }
+            &:active {
+                background-color: gray;
+                color: white;
+            }
         }
     }
     main {
@@ -76,6 +93,18 @@ body {
                 display: grid;
                 grid-template: repeat(2, 258px) / repeat(3, 416px);
                 grid-gap: 24px;
+                .content__item {
+                    transition: .3s opacity ease-in-out;
+                    border-radius: 12px;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                    &:active {
+                        // opacity: 1;
+                        filter: blur(1.5px);
+                    }
+
+                }
                 .content__item-1 {
                     padding: 50px;
                     grid-column: 1;
@@ -136,6 +165,9 @@ body {
                 @include decor-text;
             }
             .review__swiper {
+                max-width: 1525px;
+                // width: 100%;
+                overflow: hidden;
                 .review__container {
                     .review__item {
                         position: relative;
@@ -376,6 +408,11 @@ body {
                         font-size: 13px;
                         line-height: 140%;
                         color: #018ABE;
+                        transition: .2s all ease-in-out;
+                        &:hover {
+                            background-color: #018ABE;
+                            color: white;
+                        }
                     }
                 }
             }
