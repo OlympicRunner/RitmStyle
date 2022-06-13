@@ -1,0 +1,68 @@
+@import 'common.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+
+body {
+    .header {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 0;
+    
+    }
+    main {
+        .new-format {
+            display: flex;
+            flex-direction: column;
+            max-width: 1296px;
+            // height: 600px;
+            margin: 0 auto 120px;
+            align-items: center;
+            .new-format__h2 {
+                padding-top: 60px;
+                margin-bottom: 60px;
+                font-size: 24px;
+                @include h2-text;
+                @include decor-text;
+            }
+            .new-format__container {
+                display: grid;
+                grid-template-columns: 526px 636px;
+                grid-gap: 136px;
+                .new-format__info {
+                    .new-format__date {
+                        padding: 6px 12px;
+                        border-radius: 5px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 135%;
+                        color: white;
+                        background-color: #018ABE;
+                    }
+                    .new-format__h3 {
+                        padding-top: 45px;
+                        margin-bottom: 30px;
+                        font-family: 'El_Messiri';
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 140%;
+                        color: white;
+                    }
+                    .new-format__p {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 140%;
+                        color: white;
+                    }
+                }
+                .new-format__img {
+                    background-image: url(../img/new-format-img.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+        .footer {
+            padding-top: 30px;
+            border-top: 2px solid white;
+        }
+    }
+}

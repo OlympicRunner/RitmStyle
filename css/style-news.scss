@@ -1,0 +1,71 @@
+@import 'common.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+
+body {
+    .header {
+        border-bottom: 2px solid #fff;
+        margin-bottom: 0;
+    
+    }
+    main {
+        .news {
+            display: flex;
+            flex-direction: column;
+            max-width: 1296px;
+            // height: 600px;
+            margin: 0 auto 120px;
+            align-items: center;
+            .news__h2 {
+                padding-top: 60px;
+                margin-bottom: 60px;
+                font-size: 24px;
+                @include h2-text;
+                @include decor-text;
+            }
+            .news__container {
+                display: grid;
+                grid-template-columns: repeat(3, 416px);
+                grid-template-rows: repeat(2, 258px);
+                grid-gap: 24px;
+                .news__item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-image: url(../img/card-news.png);
+                    @include background-cover;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                    &:active {
+                        // opacity: 1;
+                        filter: blur(1.5px);
+                    }
+                    .news__date {
+                        margin: 30px 35px;
+                        width: 72px;
+                        padding: 6px 12px;
+                        border-radius: 5px;
+                        background-color: #018ABE;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 135%;
+                        color: white;
+                    }
+                    .news__text {
+                        margin: 30px 35px;
+                        font-family: 'El_Messiri';;
+                        font-weight: 700;
+                        font-size: 21px;
+                        line-height: 140%;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .footer {
+            padding-top: 30px;
+            border-top: 1px solid white;
+        }
+    }
+}
